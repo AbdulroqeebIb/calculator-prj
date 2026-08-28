@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./League_Spartan/favicon-32x32.png"
+    />
+  </head>
+  <body>
+    <header>
+      <p class="cal-text">calc</p>
+      <div class="button-group">
+        <div class="theme-box">
+          <p class="theme-text">THEME</p>
+        </div>
+        <div class="button-colors">
+          <div class="num-group">
+            <span class="one" data-theme="1">1</span>
+            <span class="one" data-theme="2">2</span>
+            <span class="one" data-theme="3">3</span>
+          </div>
+          <div class="switch-track" id="switch-track">
+            <div class="switch-handle" id="switch-handle"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="result-box">
+      <p class="result-box-text" id="display">0</p>
+    </div>
+
+    <div class="number-box">
+      <div class="cal-numbers">
+        <button data-type="number">7</button>
+        <button data-type="number">8</button>
+        <button data-type="number">9</button>
+        <button class="cal-del" data-type="delete">DEL</button>
+        <button data-type="number">4</button>
+        <button data-type="number">5</button>
+        <button data-type="number">6</button>
+        <button data-type="operator" data-action="add">+</button>
+        <button data-type="number">1</button>
+        <button data-type="number">2</button>
+        <button data-type="number">3</button>
+        <button data-type="operator" data-action="subtract">-</button>
+        <button data-type="decimal" data-action="decimal">.</button>
+        <button data-type="number">0</button>
+        <button data-type="operator" data-action="divide">/</button>
+        <button data-type="operator" data-action="multiply">x</button>
+      </div>
+      <div class="equal-side">
+        <button class="cal-del" data-type="reset">RESET</button>
+        <button class="cal-equl" data-type="equals">=</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
